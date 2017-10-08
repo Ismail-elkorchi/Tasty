@@ -725,18 +725,15 @@ a:hover, a:active {
 }
 
 .content-area {
-	float: left;
-	margin: 0 -25% 0 0;
-	width: 100%;
+	float: none;
+	margin: 0 auto;
+	width: 780px;
 }
+
 .site-main {
-	margin: 0 25% 0 0;
+	margin: 0;
 }
-.site-content .widget-area {
-	float: right;
-	overflow: hidden;
-	width: 25%;
-}
+
 .site-footer {
 	clear: both;
 	width: 100%;

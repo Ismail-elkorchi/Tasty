@@ -39,7 +39,7 @@ get_header();
 
 				endwhile;
 
-				the_posts_navigation();
+				tasty_paging_nav();
 
 			else :
 

@@ -522,22 +522,42 @@ textarea {
 /*--------------------------------------------------------------
 ## Links
 --------------------------------------------------------------*/
+
 a {
-	color: royalblue;
+	color: #a68b7c;
+	position: relative;
+	text-decoration: none;
 }
 
-a:visited {
-	color: purple;
+a:hover:after {
+	transform: translateY(0) translateZ(0);
+	-webkit-transform: translateY(0) translateZ(0);
+	-moz-transform: translateY(0) translateZ(0);
+	-ms-transform: translateY(0) translateZ(0);
+	-o-transform: translateY(0) translateZ(0);
+	opacity: 1;
 }
 
-a:hover,
-a:focus,
-a:active {
-	color: midnightblue;
-}
-
-a:focus {
-	outline: thin dotted;
+a:after {
+	background-color: #a68b7c;
+	content: "";
+	height: 1px;
+	left: 0;
+	opacity: 0;
+	pointer-events: none;
+	position: absolute;
+	top: 100%;
+	transform: translateY(5px);
+	-webkit-transform: translateY(5px);
+	-moz-transform: translateY(5px);
+	-ms-transform: translateY(5px);
+	-o-transform: translateY(5px);
+	transition: opacity 0.2s cubic-bezier(0.39, 0.575, 0.565, 1) 0s, transform 0.2s cubic-bezier(0.39, 0.575, 0.565, 1) 0s, -webkit-transform 0.2s cubic-bezier(0.39, 0.575, 0.565, 1) 0s;
+	-webkit-transition: opacity 0.2s cubic-bezier(0.39, 0.575, 0.565, 1) 0s, transform 0.2s cubic-bezier(0.39, 0.575, 0.565, 1) 0s, -webkit-transform 0.2s cubic-bezier(0.39, 0.575, 0.565, 1) 0s;
+	-moz-transition: opacity 0.2s cubic-bezier(0.39, 0.575, 0.565, 1) 0s, transform 0.2s cubic-bezier(0.39, 0.575, 0.565, 1) 0s, -webkit-transform 0.2s cubic-bezier(0.39, 0.575, 0.565, 1) 0s;
+	-ms-transition: opacity 0.2s cubic-bezier(0.39, 0.575, 0.565, 1) 0s, transform 0.2s cubic-bezier(0.39, 0.575, 0.565, 1) 0s, -webkit-transform 0.2s cubic-bezier(0.39, 0.575, 0.565, 1) 0s;
+	-o-transition: opacity 0.2s cubic-bezier(0.39, 0.575, 0.565, 1) 0s, transform 0.2s cubic-bezier(0.39, 0.575, 0.565, 1) 0s, -webkit-transform 0.2s cubic-bezier(0.39, 0.575, 0.565, 1) 0s;
+	width: 100%;
 }
 
 a:hover,
@@ -597,7 +617,6 @@ a:active {
 	color: #353031;
 	display: block;
 	padding: 1em;
-	text-decoration: none;
 	text-transform: uppercase;
 }
 
@@ -788,7 +807,6 @@ a:active {
 	display: block;
 	padding: 1em;
 	color: #353031;
-	text-decoration: none;
 	text-transform: uppercase;
 	font-weight: 700;
 }

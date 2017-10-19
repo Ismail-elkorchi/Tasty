@@ -21,7 +21,10 @@
 		if ( 'post' === get_post_type() ) :
 		?>
 		<div class="entry-meta">
-			<?php tasty_posted_on(); ?>
+			<?php
+			tasty_posted_on();
+			tasty_posted_by();
+			?>
 		</div><!-- .entry-meta -->
 		<?php
 		endif;

@@ -835,6 +835,15 @@ a:active {
 	text-align: center;
 }
 
+.entry-header:after {
+	border-bottom: 1px solid #000;
+	content: "";
+	display: block;
+	padding-bottom: 40px;
+	width: 2.5%;
+	margin: 0 auto 40px;
+}
+
 /*--------------------------------------------------------------
 ## Posts and pages
 --------------------------------------------------------------*/

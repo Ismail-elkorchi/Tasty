@@ -833,6 +833,7 @@ a:active {
 --------------------------------------------------------------*/
 .entry-header {
 	text-align: center;
+	margin-top: 140px;
 }
 
 .entry-header:after {
@@ -842,6 +843,13 @@ a:active {
 	padding-bottom: 40px;
 	width: 2.5%;
 	margin: 0 auto 40px;
+}
+
+.entry-title,
+.entry-title a {
+	color: #404040;
+	font-size: 2rem;
+	margin: 0.67rem 0;
 }
 
 /*--------------------------------------------------------------
